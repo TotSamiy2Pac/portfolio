@@ -26,7 +26,7 @@ const HomePage = () => {
           setActive(true);
         }
       });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.2 });
 
     animatedElements.forEach(element => {
       observer.observe(element);
