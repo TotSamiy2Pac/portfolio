@@ -8,6 +8,16 @@ section {
   transition: 1s;
 }
 
+.d-none {
+  display: none !important;
+}
+
+.d-flex {
+  display: flex !important;
+  opacity: 1 !important;
+  transition: 1s;
+}
+
 .animation-appear {
   opacity: 0;
   animation-delay: 1s;
@@ -78,6 +88,25 @@ i {
 .header .nav {
   display: flex;
   gap: 20px;
+}
+.header .wrap-burger {
+  position: relative;
+}
+.header .wrap-burger .burger-btn {
+  background-image: url("../assets/burger-menu.svg");
+  display: none;
+}
+.header .wrap-burger .nav-mobile {
+  flex-direction: column;
+  position: absolute;
+  background-color: #E4E1DB;
+  color: black;
+  left: -80%;
+  width: 200px;
+  padding-left: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity ease-in-out 1s;
 }
 
 .section-first {

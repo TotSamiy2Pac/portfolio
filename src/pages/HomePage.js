@@ -12,9 +12,11 @@ import laslesVpnImg from '../assets/laslesVpnImg.png'
 import weatherImg from '../assets/weatherApi.png'
 import carsImg from '../assets/cars.png'
 import  cv from '../assets/ArapovAsilbek.pdf'
+import burgerIcon from  '../assets/burger-menu.svg'
 
 const HomePage = () => {
   const [active, setActive] = useState(false)
+  const [open, setOpen] = useState(false)
 
 
   useEffect(() => {
@@ -40,7 +42,7 @@ const HomePage = () => {
     }
   }, []);
 
-  console.log(active)
+  console.log(open)
 
   return (
     <>
@@ -48,11 +50,23 @@ const HomePage = () => {
         <a href={'#first'}>
           <h2 className={'logo'}>Portfolio</h2>
         </a>
-        <div className={'nav'}>
+        <nav className={'nav nav-desktop'}>
           <a href='#about'>About</a>
           <a href="#stack">Stack</a>
           <a href="#portfolio">Portfolio</a>
           <a href="#contact">Contact</a>
+        </nav>
+        <div className={'wrap-burger'}>
+          <i
+            className={'burger-btn'}
+            onClick={event => setOpen(!open)}
+          ></i>
+          <nav className={open ? 'nav nav-mobile d-flex' : 'nav nav-mobile d-none'}>
+            <a href='#about'>About</a>
+            <a href="#stack">Stack</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+          </nav>
         </div>
       </header>
       <main>
