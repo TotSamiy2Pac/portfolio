@@ -211,6 +211,12 @@ i {
   & .box {
 
   }
+  & .download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   & .contact {
     display: flex;
     align-items: center;

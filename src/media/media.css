@@ -29,6 +29,14 @@
   .section-portfolio .col-6 {
     width: 100%;
   }
+  .section-contacts .title {
+    text-align: center;
+  }
+  .section-contacts .adaptive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 730px) {
   .title {
@@ -41,6 +49,10 @@
 @media screen and (max-width: 440px) {
   .section-first .section-first__content .name {
     font-size: 5em;
+  }
+  .section-contacts .contact-title {
+    letter-spacing: 1px;
+    font-size: 18px;
   }
 }
 

@@ -11,11 +11,7 @@ import eventImg from '../assets/eventImg.png'
 import laslesVpnImg from '../assets/laslesVpnImg.png'
 import weatherImg from '../assets/weatherApi.png'
 import carsImg from '../assets/cars.png'
-import gitSvg from '../assets/git-svgrepo.svg'
-import telegram from '../assets/telegram.svg'
-import phone from '../assets/phone.svg'
-import mail from '../assets/mail.svg'
-import linkedin from '../assets/linkedin.svg'
+import  cv from '../assets/ArapovAsilbek.pdf'
 
 const HomePage = () => {
   const [active, setActive] = useState(false)
@@ -292,16 +288,15 @@ const HomePage = () => {
           <div className="container">
             <h2 className={'title'}>Contacts</h2>
             <div className="row">
-              <div className="col-6">
-                <div className="box">
+              <div className="col-6 download">
+                <div className="box ">
                   <h3 className="contact-title">
-                    Download CV
+                    <a href={cv} download={'CV_Arapov_Asilbek'}>Download CV</a>
                   </h3>
-                  <a href="../assets/ArapovAsilbek.pdf" download={'CV_Arapov_Asilbek'}>Download CV</a>
                 </div>
               </div>
               <div className="col-6">
-                <div className="box">
+                <div className="box adaptive">
                   <Link
                   to={'https://www.linkedin.com/in/asilbek-arapov-82a60528a/'}
                   target={'_blank'}

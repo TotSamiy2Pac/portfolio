@@ -34,6 +34,11 @@
       height: 350px;
     }
   }
+  .section-contacts {
+    //& .col-6 {
+    //  width: 50%;
+    //}
+  }
 }
 
 @media screen and (max-width: 800px){
@@ -46,6 +51,17 @@
   .section-portfolio {
     & .col-6 {
       width: 100%;
+    }
+  }
+
+  .section-contacts {
+    & .title {
+      text-align: center;
+    }
+    & .adaptive {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
@@ -71,6 +87,13 @@
       & .name {
         font-size: 5em;
       }
+    }
+  }
+
+  .section-contacts {
+    & .contact-title {
+      letter-spacing: 1px;
+      font-size: 18px;
     }
   }
 }
