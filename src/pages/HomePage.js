@@ -45,12 +45,18 @@ const HomePage = () => {
   return (
     <>
       <header className={'header'}>
-        <Link to={'/'}>
+        <a href={'#first'}>
           <h2 className={'logo'}>Portfolio</h2>
-        </Link>
+        </a>
+        <div className={'nav'}>
+          <a href='#about'>About</a>
+          <a href="#stack">Stack</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
       </header>
       <main>
-        <section className={'section-first'}>
+        <section id={'first'} className={'section-first'}>
           <div className="container">
 
             <div className={'section-first__content'}>
@@ -59,7 +65,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-        <section className={'animate-on-scroll section-second'}>
+        <section id={'about'} className={'animate-on-scroll section-second'}>
           <div className="container">
             <div className="row">
               <div className="col-6 about_content">
@@ -89,7 +95,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-        <section className={'section-stack'}>
+        <section id={'stack'} className={'section-stack'}>
           <div className="container">
             <div className="section-stack__box">
               <div className={'left-box'}>
@@ -149,7 +155,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-        <section className="section-portfolio">
+        <section id={'portfolio'} className="section-portfolio">
           <div className="container">
             <h2 className="title">PORTFOLIO</h2>
             <div className="row">
@@ -284,7 +290,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-        <section className={'section-contacts'}>
+        <section id={'contact'} className={'section-contacts'}>
           <div className="container">
             <h2 className={'title'}>Contacts</h2>
             <div className="row">
