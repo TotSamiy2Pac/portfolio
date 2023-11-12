@@ -72,6 +72,8 @@
     font-size: 40px;
   }
   .section-first {
+    height: 80vh;
+
     & .section-first__content {
       & .name {
         font-size: 10em;
@@ -81,8 +83,9 @@
 }
 
 @media screen and (max-width: 440px){
-
   .section-first {
+    height: 60vh;
+    position: relative;
     & .section-first__content {
       & .name {
         font-size: 5em;
