@@ -179,7 +179,9 @@ const HomePage = () => {
                   target={'_blank'}
                 >
                   <div className="box box-wrap">
-                    <img src={movie} alt="movie-img"/>
+                    <div className={'img-wrap'}>
+                      <img src={movie} alt="movie-img"/>
+                    </div>
                     <div className={'link-git'}>
                       <h3 className={'project-title'}>
                         MOVIE
@@ -195,7 +197,9 @@ const HomePage = () => {
                   target={'_blank'}
                 >
                   <div className="box box-wrap">
-                    <img src={authImg} alt="movie-img"/>
+                    <div className={'img-wrap'}>
+                      <img src={authImg} alt="auth-img"/>
+                    </div>
                     <div className="link-git">
                       <h3 className={'project-title'}>
                         authorization form
@@ -211,7 +215,9 @@ const HomePage = () => {
                   target={'_blank'}
                 >
                   <div className="box box-wrap">
-                    <img src={todoImg} alt="movie-img"/>
+                    <div className={'img-wrap'}>
+                      <img src={todoImg} alt="todo-img"/>
+                    </div>
                     <div className="link-git">
                       <h3 className={'project-title'}>
                         TODO
@@ -227,7 +233,9 @@ const HomePage = () => {
                   target={'_blank'}
                 >
                   <div className="box box-wrap">
-                    <img src={weatherImg} alt="movie-img"/>
+                    <div className={'img-wrap'}>
+                      <img src={weatherImg} alt="weather-img"/>
+                    </div>
                     <div className="link-git">
                       <h3 className={'project-title'}>
                         Weather
@@ -243,7 +251,9 @@ const HomePage = () => {
                   target={'_blank'}
                 >
                   <div className="box box-wrap">
-                    <img src={cocktailImg} alt="movie-img"/>
+                    <div className={'img-wrap'}>
+                      <img src={cocktailImg} alt="cocktail-img"/>
+                    </div>
                     <div className="link-git">
                       <h3 className={'project-title'}>
                         Cocktail recipe
@@ -259,7 +269,9 @@ const HomePage = () => {
                   target={'_blank'}
                 >
                   <div className="box box-wrap">
-                    <img src={eventImg} alt="movie-img"/>
+                    <div className={'img-wrap'}>
+                      <img src={eventImg} alt="event-img"/>
+                    </div>
                     <div className="link-git">
                       <h3 className={'project-title'}>
                         Event landing page
@@ -275,7 +287,9 @@ const HomePage = () => {
                   target={'_blank'}
                 >
                   <div className="box box-wrap">
-                    <img src={laslesVpnImg} alt="movie-img"/>
+                    <div className={'img-wrap'}>
+                      <img src={laslesVpnImg} alt="lasles-img"/>
+                    </div>
                     <div className="link-git">
                       <h3 className={'project-title'}>
                         Lasles landing page
@@ -291,7 +305,9 @@ const HomePage = () => {
                   target={'_blank'}
                 >
                   <div className="box box-wrap">
-                    <img src={carsImg} alt="movie-img"/>
+                    <div className={'img-wrap'}>
+                      <img src={carsImg} alt="cars-img"/>
+                    </div>
                     <div className="link-git">
                       <h3 className={'project-title'}>
                         Cars landing page

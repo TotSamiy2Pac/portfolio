@@ -18,6 +18,14 @@ section {
   transition: 1s;
 }
 
+a {
+  transition: 0.5s;
+}
+
+a:hover {
+  color: red;
+}
+
 .animation-appear {
   opacity: 0;
   animation-delay: 1s;
@@ -71,6 +79,7 @@ i {
   line-height: 1.1;
   display: inline-block;
   padding: 20px 0;
+  transition: 0.5s;
 }
 
 .header {
@@ -219,6 +228,19 @@ i {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.section-portfolio .box-wrap .img-wrap {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.section-portfolio .box-wrap .img-wrap img {
+  transition: 0.5s;
+}
+.section-portfolio .box-wrap .img-wrap:hover img {
+  transform: scale(1.2);
+}
+.section-portfolio .box-wrap:hover .link-git .project-title {
+  color: #7e0b0b;
 }
 .section-portfolio img {
   width: 100%;
